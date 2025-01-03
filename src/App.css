@@ -1,0 +1,152 @@
+html{
+  /* background-color: #0f171e; */
+  --custom-background-color: rgb(230, 230, 230);
+  background-color: var(--custom-background-color);
+  /* background-color: rgb(230, 230, 230); */
+
+  --custom-font-color: rgb(60, 60, 60);
+
+  color: var(--custom-font-color);
+  font-size: 14px;
+}
+
+.col{
+  color: var(--custom-font-color);
+}
+
+.grid, .text-color-inverted{
+  color: var(--custom-font-color);
+}
+
+.text-link{
+  text-decoration: none;
+  transition: .2s ease;
+  color: #fff;
+}
+
+.text-link-special{
+  transition: .2s ease;
+  color: rgb(113, 126, 180);
+}
+
+.text-link-special-class{
+  transition: .2s ease;
+  color: rgb(51, 146, 76);
+  text-decoration: none;
+}
+
+.text-link-special-class-danger{
+  transition: .2s ease;
+  color: rgb(245, 124, 0);
+  text-decoration: none;
+}
+
+.text-footer{
+  transition: .2s ease;
+  color: white;
+}
+
+.text-link-special-class-danger:hover{
+  opacity: .85;
+  cursor: pointer;
+}
+
+.text-link:hover, .logo:hover, .text-link-special:hover, .text-link-special-class:hover, .text-footer:hover{
+  opacity: .6;
+  cursor: pointer;
+}
+
+.loading {
+  display: flex;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 6;
+  background-color: #00000080;
+  flex-direction: column;
+}
+
+.navbar-component{
+  z-index: 7;
+}
+
+.logo{
+  transition: .2s ease;
+  width: 100%;
+}
+
+.logo-middle{
+  vertical-align: middle;
+}
+
+.header, .footer{
+  background-color: #fff;
+}
+
+.button-primary-hover:hover{
+  background: #4b8abd !important;
+  color: #fff !important;
+}
+
+.button-secondary-hover:hover{
+  background: #78909C !important;
+  color: #fff !important;
+}
+
+.p-datatable{
+  min-width: 350px;
+}
+
+.button-demo .template .p-button.discord {
+  background: linear-gradient(to left, var(--bluegray-700) 50%, var(--bluegray-800) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.35s ease-in;
+  color: #fff;
+  text-decoration: none;
+  border-color: var(--bluegray-800);
+}
+.button-demo .template .p-button.discord:hover {
+  background-position: left bottom;
+}
+.button-demo .template .p-button.discord:focus {
+  box-shadow: 0 0 0 1px var(--bluegray-500);
+}
+
+.login{
+  height: calc(100vh - 167px);
+}
+
+.logo-background{
+  /* background-color: white; */
+  background-image: url("assets/logo.png");
+  /* height: 100vh; */
+  background-position: bottom left; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: auto;
+}
+
+.toolbar-uhcc{
+  top: 0px;
+}
+
+@media screen and (min-width: 768px){
+  .toolbar-uhcc{
+    top:91px;
+  }
+  .loading{
+    height: calc(100% - 91px);
+  }
+}
+
+@media screen and (min-width: 992px){
+  .toolbar-uhcc{
+    top:94px;
+  }
+  .loading{
+    height: calc(100% - 94px);
+  }
+}

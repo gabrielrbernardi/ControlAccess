@@ -1,0 +1,204 @@
+{
+    "actualCycle": "2022-3",
+    "actualClass": "1",
+    "rootRepo": ["https://github.com/gabrielrbernardi/UberHub-Code-Club", "GitHub UberHub Code Club GRB"],
+    "instructors":[
+        {"name": "Aryanne", "code": "aryanne"},
+        {"name": "Gabriel", "code": "gabriel"},
+        {"name": "Gabryelle", "code": "gabryelle"},
+        {"name": "Giovana", "code": "giovana"},
+        {"name": "Giullia", "code": "giullia"},
+        {"name": "Guilherme Cabral", "code": "guilherme"},
+        {"name": "Joao Daniel", "code": "joao"},
+        {"name": "Lucas Gabriel", "code": "lucas"},
+        {"name": "Marcus", "code": "marcus"},
+        {"name": "Pedro Henrique", "code": "pedro"},
+        {"name": "Ricardo", "code": "ricardo"},
+        {"name": "Victor Sisterolli", "code": "victor"}
+    ],
+    "restrictedFiles": [
+        {
+            "name": "Aryanne",
+            "obs": "Manhã Presencial",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Aryanne%20M%20P.txt"
+        }, 
+        {
+            "name": "Gabriel",
+            "obs": "Manhã Presencial",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Gabriel%20M%20P.txt"
+        },
+        {
+            "name": "Gabriel",
+            "obs": "Tarde Presencial",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Gabriel%20T%20P.txt"
+        }, 
+        {
+            "name": "Gabryelle",
+            "obs": "Tarde Presencial",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Gabryelle%20T%20P.txt"
+        }, 
+        {
+            "name": "Giovana",
+            "obs": "Manhã Presencial",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Giovana%20M%20P.txt"
+        }, 
+        {
+            "name": "Giullia",
+            "obs": "Manhã Online",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Giullia%20M%20O.txt"
+        }, 
+        {
+            "name": "Giullia",
+            "obs": "Tarde Online",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Giullia%20T%20O.txt"
+        }, 
+        {
+            "name": "Guilherme",
+            "obs": "Tarde Online",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Guilherme%20T%20O.txt"
+        }, 
+        {
+            "name": "Joao",
+            "obs": "Manhã Presencial",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Joao%20M%20P.txt"
+        }, 
+        {
+            "name": "Lucas",
+            "obs": "Tarde Online",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Lucas%20T%20O.txt"
+        }, 
+        {
+            "name": "Marcus",
+            "obs": "Manhã Online",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Marcus%20M%20O.txt"
+        }, 
+        {
+            "name": "Pedro",
+            "obs": "Manhã Online",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Pedro%20M%20O.txt"
+        }, 
+        {
+            "name": "Pedro",
+            "obs": "Tarde Online",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Pedro%20T%20O.txt"
+        },
+        {
+            "name": "Ricardo",
+            "obs": "Manhã Online",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Ricardo%20M%20O.txt"
+        }, 
+        {
+            "name": "Ricardo",
+            "obs": "Tarde Presencial",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20Ricardo%20T%20P.txt"
+        }, 
+        {
+            "name": "Victor",
+            "obs": "Manhã Online",
+            "url": "https://github.com/gabrielrbernardi/grb/blob/main/webserver/src/assets/textFiles/Usuarios%20SIsterolli%20M%20O.txt"
+        }
+    ],
+    "inic1": [
+        {
+            "name": "Aula 01",
+            "subject": "Conceitos básicos, variáveis, entrada e saída",
+            "url": "https://docs.google.com/presentation/d/1jJNu-ltY8Tj62PvWPny1M1cqC2Zi3RcO/edit?usp=sharing&ouid=111709091661884688005&rtpof=true&sd=true"
+        },
+        {
+            "name": "Aula 02",
+            "subject": "Estruturas condicionais. If, else if e else",
+            "url": "https://docs.google.com/presentation/d/1wBzC5-j-z-dS1wgOWgiss5zY7RnBPqMP/edit?usp=sharing&ouid=111709091661884688005&rtpof=true&sd=true"
+        },
+        {
+            "name": "Aula 03",
+            "subject": "Estruturas de repetição 1. While, for e End Of File (EOF)",
+            "url": "https://docs.google.com/presentation/d/1dMuh3X3eHvVPGAIkKhfcKhA_Yyk3n6R7/edit?usp=sharing&ouid=111709091661884688005&rtpof=true&sd=true"
+        },
+        {
+            "name": "Aula 04",
+            "subject": "Estruturas de repetição 2. Continuação, Loop infinito, break",
+            "url": "https://drive.google.com/file/d/1V5NgYoq8qmJg31_CpDscC0xnOcMNgWDV/view?usp=sharing"
+        }
+    ],
+    "inic2": [
+        {
+            "name": "Aula 05",
+            "subject": "Revisão do Inciante 1",
+            "url": "https://ufubr-my.sharepoint.com/:p:/g/personal/gabriel_bernardi_ufu_br/Ee8dDi1HehlMr8I8Tm6vLGEBm087DVIuoVBHwYQiL54muA?e=sHbZT4"
+        },    
+        {
+            "name": "Aula 05",
+            "subject": "Vetores (Arrays) e C++",
+            "url": "https://ufubr-my.sharepoint.com/:p:/g/personal/gabriel_bernardi_ufu_br/EYUN5JoNaiJKm648A1xp42ABUHLngb5_zFry3ST8rZUzjA?e=W4WmbP"
+        },
+        {
+            "name": "Aula 06",
+            "subject": "Vetores em C++ e Matrizes",
+            "url": "https://ufubr-my.sharepoint.com/:p:/g/personal/gabriel_bernardi_ufu_br/EVAJZXJLDl5EgfDuCpP9BbgBOXu2AtyklZVqCHTXgBrqeg?e=2BgmQ8"
+        },
+        {
+            "name": "Aula 07",
+            "subject": "Strings",
+            "url": "https://ufubr-my.sharepoint.com/:p:/g/personal/gabriel_bernardi_ufu_br/EVbHORIhlpZGiGPQt6ZF5LgBqch6-o6M6aa_TlZVe74VLQ?e=filJSW"
+        },
+        {
+            "name": "Aula 08",
+            "subject": "Funções",
+            "url": "https://ufubr-my.sharepoint.com/:p:/g/personal/gabriel_bernardi_ufu_br/EQxhCyB_L39DvBE6Z9FNu4oBnA_6GXnGZf4SHRaPDgh3cw?e=4oVajz"
+        },
+        {
+            "name": "Aula 09",
+            "subject": "Revisão Inciante 2",
+            "url": "https://ufubr-my.sharepoint.com/:p:/g/personal/gabriel_bernardi_ufu_br/ETwkWXBpDshEhZFR7pbSt9UBlslgrh7eiI7LZ_PXHjYaSA?e=xmHCS5"
+        }
+    ],
+    "inter1": [
+        {
+            "name": "Aula 09",
+            "subject": "Revisão Iniciante 2",
+            "url": "https://docs.google.com/presentation/d/1crcJRA3wrDjAKvK3eBZGLHmhXNIjbKtX/edit?usp=sharing&ouid=111709091661884688005&rtpof=true&sd=true"
+        },
+        {
+            "name": "Aula 09",
+            "subject": "Ordenação",
+            "url": "https://docs.google.com/presentation/d/1jrzbxG4BTLIe3vB8fI6X6EgFEclM5ivc/edit?usp=sharing&ouid=111709091661884688005&rtpof=true&sd=true"
+        },
+        {
+            "name": "Aula 10",
+            "subject": "Structs",
+            "url": "https://docs.google.com/presentation/d/1Wss_YmMl1ZHpnODGJo_Qxs-nr5pZmMu-/edit?usp=sharing&ouid=111709091661884688005&rtpof=true&sd=true"
+        },
+        {
+            "name": "Aula 11",
+            "subject": "Map",
+            "url": "https://docs.google.com/presentation/d/1HRIzMMMKf2wsPHGyoL3AnT2gu5lW30PJ/edit?usp=sharing&ouid=111709091661884688005&rtpof=true&sd=true"
+        },
+        {
+            "name": "Aula 12",
+            "subject": "Soma acumulada e Counting Sort",
+            "url": "https://docs.google.com/presentation/d/1PxntxBf9Vo7f99xBUfaErXeKQPeTYdLG/edit?usp=sharing&ouid=111709091661884688005&rtpof=true&sd=true"
+        },
+        {
+            "name": "Aula 13",
+            "subject": "Revisão Intermediário 1",
+            "url": "https://docs.google.com/presentation/d/1YliJFWQsxNwAOr3uoxCCeMwx5yy-2vve/edit?usp=sharing&ouid=111709091661884688005&rtpof=true&sd=true"
+        }
+    ],
+    "aula": [
+        {
+            "name": "Link",
+            "subject": "Beecrowd",
+            "url": "https://www.beecrowd.com.br/"
+        },
+        {
+            "name": "Link",
+            "subject": "Neps Academy",
+            "url": "https://neps.academy/br"
+        },
+        {
+            "name": "Youtube",
+            "subject": "UberHub Code Club",
+            "url": "https://www.youtube.com/uberhubcodeclub"
+        }
+    ]
+}
