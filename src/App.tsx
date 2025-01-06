@@ -52,7 +52,7 @@ function App() {
               {/* <Route path="" element={<Navigate to="uberhub" replace />} /> */}
               {/* <Route path="" element={<Home/>} /> */}
               <Route path="" element={<Navigate to="/login" replace />} />
-              <Route path="about" element={<About/>}/>
+              <Route path="ControlAccess" element={<Navigate to="/login" replace />}/>
               <Route path="index.html" element={<Navigate to="/" replace />}>
                 <Route path="?source=uberhub" element={<UHCC/>} />
                 <Route path="?source=length" element={<CheckLength/>} />

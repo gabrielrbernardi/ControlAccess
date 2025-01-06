@@ -54,7 +54,8 @@ const Login = () => {
                     apiZen.defaults.headers.common['id_usuario'] = response?.data?.data?.id;
                 }
                 document.cookie = `name=${response?.data?.username}; path=/; Secure`
-                document.cookie = `token=${response?.data?.token}; path=/; Secure`
+                document.cookie = `token=${response.data.token}; path=/; Secure`
+                apiZen.defaults.headers.common['token'] = response?.data?.token
                 setLoading(false);
                 navigate("/internal")
             }, 2000);
