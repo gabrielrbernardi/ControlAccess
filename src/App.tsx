@@ -17,6 +17,7 @@ import HomeInternal from './pages/internal/Home';
 import DataTableScoreboard from './pages/internal/DataTableScoreboard';
 import Scoreboard from './pages/functionalities/Scoreboard';
 import CheckTickets from './pages/functionalities/CheckTickets';
+import SignUp from './pages/SignUp';
 
 function App() {
   const [getAuth, setAuth] = useState<boolean>();
@@ -50,25 +51,16 @@ function App() {
             <Route path="/">
               {/* <Route path="" element={<Navigate to="uberhub" replace />} /> */}
               {/* <Route path="" element={<Home/>} /> */}
-              <Route path="" element={<UHCC/>} />
+              <Route path="" element={<Navigate to="/login" replace />} />
               <Route path="about" element={<About/>}/>
               <Route path="index.html" element={<Navigate to="/" replace />}>
                 <Route path="?source=uberhub" element={<UHCC/>} />
                 <Route path="?source=length" element={<CheckLength/>} />
               </Route>
               {/* <Route path="uberhub" element={<UHCC/>}/> */}
-              <Route path="uberhub" element={<Navigate to="/" replace />}/>
-              <Route path="functionalities">
-                <Route path="" element={<Functionalities/>}/>
-                <Route path="compare" element={<Compare/>}/>
-                <Route path="length" element={<CheckLength/>}/>
-                <Route path="transform" element={<Transform/>}/>
-                {/* <Route path="tickets" element={<CheckTickets/>}/> */}
-              </Route>
-              <Route path="scoreboard" element={<Scoreboard/>}/>
-              {/* <Route path="/grb" element={<Navigate to="/" replace />}/> */}
               <Route path="404" element={<NotFound/>}/>
               <Route path="login" element={<Login/>}/>
+              <Route path="signup" element={<SignUp/>}/>
               <Route path="internal">
                 {getAuth
                   ?

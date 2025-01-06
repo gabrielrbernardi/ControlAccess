@@ -13,7 +13,7 @@ import Toast from '../../components/Toast';
 import UpdateUserName from './Users/UpdateUserName';
 import UpdateUserStatus from './Users/UpdateUserStatus';
 import UpdateUserPassword from './Users/ResetUserPassword';
-import CreateNewUser from './Users/CreateNewUser';
+import CreateNewUser from '../SignUp';
 import DeleteUser from './Users/DeleteUser';
 import UpdateUserStatusAdmin from './Users/UpdateUserStatusAdmin';
 

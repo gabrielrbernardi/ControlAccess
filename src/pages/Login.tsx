@@ -1,10 +1,7 @@
+import React, { useEffect, useState } from 'react';
 import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
-import React, { useState } from 'react';
-import { render as w } from '@testing-library/react';
-import apiGrb from '../services/apiGrb';
-import ToastComponent from '../components/Toast';
 import { Message } from 'primereact/message';
 import { useNavigate } from 'react-router-dom';
 import apiZen from '../services/apiZen';
@@ -18,10 +15,29 @@ const Login = () => {
 
     const [getLoading, setLoading] = useState<boolean>(false);
 
-    function handleSubmit(event:any){
+    useEffect(() => {
+        checkAuth()
+    }, [])
+
+    async function checkAuth(){
+        if(getCookie("isAuth") === 'true'){
+            navigate("/internal")
+            return true;
+        }else{
+            return false;
+        }
+      }
+    
+    function getCookie(name:any) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop()?.split(';')?.shift();
+    }
+
+    async function handleSubmit(event:any){
         event?.preventDefault();
         setLoading(true)
-        apiZen.post("/users/login", {username: getUser, password: getPass}).then(response => {
+        await apiZen.post("/users/login", {username: getUser, password: getPass}).then(async response => {
             const d = new Date();
             // d.setTime(d.getTime() + (10*1000));
             d.setTime(d.getTime() + (4*60*60*1000));
@@ -35,7 +51,7 @@ const Login = () => {
                 }
                 if(response?.data?.data?.id){
                     document.cookie = `id=${response?.data?.data?.id}; path=/; Secure`
-                    apiGrb.defaults.headers.common['id_usuario'] = response?.data?.data?.id;
+                    apiZen.defaults.headers.common['id_usuario'] = response?.data?.data?.id;
                 }
                 document.cookie = `name=${response?.data?.username}; path=/; Secure`
                 document.cookie = `token=${response?.data?.token}; path=/; Secure`
@@ -71,6 +87,7 @@ const Login = () => {
                 </span>
                 <br/>
                 <Button loading={getLoading} className="p-button-sm" type="submit" label={!getLoading ? "Login" : "Carregando"}/>
+                <Button className="p-button-sm ml-auto text-right" type="button" onClick={() => navigate("/signup")} link label="Criar usuário"/>
             </form>
         </div>
     )
