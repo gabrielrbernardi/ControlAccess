@@ -202,7 +202,8 @@ const Clients = () => {
     **************************************************/
     async function handleDelete() {       
         try {
-            await apiZen.delete(`/clients/${selectedClient?.IdCliente}`, {headers: {accessToken: getCookies.userData.AccessToken}}).then(response => {
+            console.log(getCookies)
+            await apiZen.delete(`/clients/${selectedClient?.IdCliente}`, {headers: {accessToken: getCookies.token}}).then(response => {
                 if(response?.data){
                     if (response?.data?.deletedClient) {
                         //@ts-ignore
@@ -441,7 +442,7 @@ const Clients = () => {
                 <div className="datatable-responsive-demo">
                     <DataTable className="p-datatable-responsive-demo datatable-templating-demo"
                         id='clientsTable'
-                        dataKey='IdCliente' 
+                        dataKey='IdCliente'
                         value={getClients}
                         paginator={true}
                         rows={rowsPag}
@@ -461,7 +462,7 @@ const Clients = () => {
                         onContextMenu={e => ctxmnu.current.show(e.originalEvent)}>
                         <Column className="" field="IdCliente"    header="ID"                 sortable        body={idClienteTemplate}></Column>
                         <Column className="" field="Nome"         header="Nome"               sortable filter body={nomeTemplate} style={{  }}></Column>
-                        <Column className="" field="Validade"     header="Validade"           sortable filter body={validadeTemplate}></Column>
+                        <Column className="" field="Validade"     header="Validade"           filter body={validadeTemplate}></Column>
                         <Column className="" field="CNPJ"         header="CNPJ/CPF"           sortable        body={cnpjTemplate}></Column>
                         <Column className="" field="updated_at"   header="Última Atualização" sortable        body={updatedAtTemplate}></Column>
                         <Column className="" field="dtReferencia" header="Dt referência"      sortable        body={dtReferenciaTemplate}></Column>
