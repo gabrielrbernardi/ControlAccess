@@ -8,7 +8,7 @@ import { Dialog } from 'primereact/dialog';
 import { Button } from 'primereact/button';
 import { Dropdown } from 'primereact/dropdown';
 import { Tag } from 'primereact/tag';
-import apiGrb from '../../services/apiGrb';
+import apiZen from '../../services/apiZen';
 import Toast from '../../components/Toast';
 import UpdateUserName from './Users/UpdateUserName';
 import UpdateUserStatus from './Users/UpdateUserStatus';
@@ -55,7 +55,7 @@ const DataTableUsers = () => {
 
     async function fetchData(){
         setLoading(true);
-        await apiGrb.get("users")
+        await apiZen.get("users")
         .then(response => {
             setUsers(response.data.users);
             setLoading(false);

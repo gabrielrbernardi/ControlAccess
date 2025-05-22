@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client';
 import { Dropdown } from 'primereact/dropdown';
 
 import Toast from '../../../components/Toast';
-import apiGrb from '../../../services/apiGrb';
+import apiZen from '../../../services/apiZen';
 
 const UpdateUserPassword = (props:any) => {
     const [getId, setId] = useState<any>();
@@ -33,7 +33,7 @@ const UpdateUserPassword = (props:any) => {
     
     async function handleDelete(){
         setLoading(true);
-        await apiGrb.delete(`/user/${getId}`)
+        await apiZen.delete(`/user/${getId}`)
             .then((response:any) => {
                 setLoading(false);
                 //@ts-ignore

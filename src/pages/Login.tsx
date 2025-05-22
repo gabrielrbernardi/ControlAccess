@@ -88,7 +88,7 @@ const Login = () => {
                 </span>
                 <br/>
                 <Button loading={getLoading} className="p-button-sm" type="submit" label={!getLoading ? "Login" : "Carregando"}/>
-                <Button className="p-button-sm ml-auto text-right" type="button" onClick={() => navigate("/signup")} link label="Criar usuário"/>
+                {/* <Button className="p-button-sm ml-auto text-right" type="button" onClick={() => navigate("/signup")} link label="Criar usuário"/> */}
             </form>
         </div>
     )

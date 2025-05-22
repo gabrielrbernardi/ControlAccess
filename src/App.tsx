@@ -3,21 +3,11 @@ import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import { ScrollTop } from 'primereact/scrolltop';
 import './App.css';
 import Navbar from './components/Navbar';
-import About from './pages/About';
-import Compare from './pages/functionalities/Compare';
-import CheckLength from './pages/functionalities/CheckLength';
-import Transform from './pages/functionalities/Transform';
-import Functionalities from './pages/functionalities/Functionalities';
 import NotFound from './pages/NotFound';
-import UHCC from './pages/UHCC';
 import Footer from './components/Footer';
-import FooterMessage from './components/FooterMessage';
 import Login from './pages/Login';
 import HomeInternal from './pages/internal/Home';
-import DataTableScoreboard from './pages/internal/DataTableScoreboard';
-import Scoreboard from './pages/functionalities/Scoreboard';
-import CheckTickets from './pages/functionalities/CheckTickets';
-import SignUp from './pages/SignUp';
+
 
 function App() {
   const [getAuth, setAuth] = useState<boolean>();
@@ -54,19 +44,17 @@ function App() {
               <Route path="" element={<Navigate to="/login" replace />} />
               <Route path="ControlAccess" element={<Navigate to="/login" replace />}/>
               <Route path="index.html" element={<Navigate to="/" replace />}>
-                <Route path="?source=uberhub" element={<UHCC/>} />
-                <Route path="?source=length" element={<CheckLength/>} />
               </Route>
               {/* <Route path="uberhub" element={<UHCC/>}/> */}
               <Route path="404" element={<NotFound/>}/>
               <Route path="login" element={<Login/>}/>
-              <Route path="signup" element={<SignUp/>}/>
+              {/* <Route path="signup" element={<SignUp/>}/> */}
+              <Route path="signup" element={<NotFound/>}/>
               <Route path="internal">
                 {getAuth
                   ?
                     <>
                       <Route path="" element={<HomeInternal/>}/>
-                      <Route path="uhcc" element={<UHCC/>}/>
                     </>
                   : 
                     <>

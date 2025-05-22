@@ -122,7 +122,7 @@ html{
 
 .logo-background{
   /* background-color: white; */
-  background-image: url("assets/logo.png");
+  background-image: url("assets/logo.jpg");
   /* height: 100vh; */
   background-position: bottom left; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */

@@ -163,6 +163,7 @@ const Clients = () => {
      *  endIndex: valor do ultimo registro mostrado na pagina da tabela
     **************************************************/
     async function fetchData(endIndex: number) {
+        setLoading(true);
         try {
             if(getCookies){
                 if (getCookies?.token) {
@@ -579,7 +580,7 @@ const Clients = () => {
                                 </span>
                             </div>
 
-                            <div className="p-col-12 p-lg-12 my-3">
+                            <div className="p-col-12 p-lg-12 my-3 pb-3">
                                 <div className="flex align-items-center">
                                     <Checkbox inputId="checkBoxAtualizavel" 
                                             onChange={e => {setZenUpdate(e.checked === undefined ? false : e.checked)}} 

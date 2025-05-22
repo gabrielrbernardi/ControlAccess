@@ -3,7 +3,7 @@ import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
 import ReactDOM from 'react-dom/client';
 
-import apiGrb from '../../../services/apiGrb';
+import apiZen from '../../../services/apiZen';
 import Toast from '../../../components/Toast';
 
 const UpdateUserName = (props:any) => {
@@ -19,7 +19,7 @@ const UpdateUserName = (props:any) => {
     async function handleSubmit(event:any){
         event?.preventDefault();
         setLoading(true);
-        await apiGrb.put("/user/name", {id: getId, Name: getName}).then((response:any) => {
+        await apiZen.put("/user/name", {id: getId, Name: getName}).then((response:any) => {
             setLoading(false);
             //@ts-ignore
             ReactDOM.hydrateRoot(document.getElementById("root") as HTMLElement, <Toast type={"success"} title={"Atualizado!"} message={response?.data?.data || "Atualizado com sucesso!"}/>);

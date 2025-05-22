@@ -13,7 +13,8 @@ import { Avatar } from 'primereact/avatar';
 import { Dialog } from 'primereact/dialog';
 import Footer from './Footer';
 
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
+// import logo from "../assets/uhcc/uhccLogo.png";
 
 // const logo = require("../assets/logo.png");
 
@@ -109,116 +110,6 @@ const Navbar = () => {
             },
         },
         {
-            label: 'Consultar',
-            icon: 'pi pi-fw pi-github',
-            command: () => {
-                navigate(rootPath + '/about')
-            }
-        },
-        {
-            label: 'UberHub',
-            icon: 'pi pi-fw pi-desktop',
-            command: () => {
-                navigate(rootPath + '/uberhub')
-            }
-        },
-        {
-            label: 'Funcionalidades',
-            icon: 'pi pi-fw pi-ellipsis-h',
-            template: (item:any, options:any) => {
-                return (
-                    /* custom element */
-                    <Button className={options.className + " my-0 p-button-text"} style={{width: "100%"}} onClick={options.onClick} onMouseOver={() => {}}>
-                        <span className="pi pi-fw pi-ellipsis-h mr-2"/>
-                        <span className={options.labelClassName}>{item.label}</span>
-                        <span className="p-submenu-icon pi pi-angle-down"/>
-                    </Button>
-                );
-            },
-            items: [
-                {
-                    label: 'Comparar',
-                    // icon: 'pi pi-fw pi-calendar-plus',
-                    template: (item:any, options:any) => {
-                        return (
-                            /* custom element */
-                            <p className={options.className + " my-0 ml-3 lg:ml-0"} onClick={options.onClick}>
-                                <MdCompareArrows size={20} className="mr-2"/>
-                                <span className={options.labelClassName}>{item.label}</span>
-                            </p>
-                        );
-                    },
-                    command: () => {
-                        navigate(rootPath + "/functionalities/compare")
-                    }
-                },
-                {
-                    label: 'Tamanho',
-                    // icon: 'pi pi-fw pi-calendar-plus',
-                    template: (item:any, options:any) => {
-                        return (
-                            /* custom element */
-                            <p className={options.className + " my-0 ml-3 lg:ml-0"} onClick={options.onClick}>
-                                <AiOutlineColumnWidth size={20} className="mr-2"/>
-                                <span className={options.labelClassName}>{item.label}</span>
-                            </p>
-                        );
-                    },
-                    command: () => {
-                        navigate(rootPath + "/functionalities/length")
-                    }
-                },
-                {
-                    label: 'Transformar',
-                    // icon: 'pi pi-fw pi-calendar-plus',
-                    template: (item:any, options:any) => {
-                        return (
-                            /* custom element */
-                            <p className={options.className + " my-0 ml-3 lg:ml-0"} onClick={options.onClick}>
-                                <GiTransform size={20} className="mr-2"/>
-                                <span className={options.labelClassName}>{item.label}</span>
-                            </p>
-                        );
-                    },
-                    command: () => {
-                        navigate(rootPath + "/functionalities/transform")
-                    }
-                },
-                // {
-                //     label: 'Verificar Tickets',
-                //     // icon: 'pi pi-fw pi-calendar-plus',
-                //     template: (item:any, options:any) => {
-                //         return (
-                //             /* custom element */
-                //             <p className={options.className + " my-0 ml-3 lg:ml-0"} onClick={options.onClick}>
-                //                 <GiTransform size={20} className="mr-2"/>
-                //                 <span className={options.labelClassName}>{item.label}</span>
-                //             </p>
-                //         );
-                //     },
-                //     command: () => {
-                //         navigate(rootPath + "/functionalities/tickets")
-                //     }
-                // },
-                // {
-                //     label: 'Placar',
-                //     // icon: 'pi pi-fw pi-calendar-plus',
-                //     template: (item:any, options:any) => {
-                //         return (
-                //             /* custom element */
-                //             <p className={options.className + " my-0 ml-3 lg:ml-0"} onClick={options.onClick}>
-                //                 <GrScorecard size={20} className="mr-2"/>
-                //                 <span className={options.labelClassName}>{item.label}</span>
-                //             </p>
-                //         );
-                //     },
-                //     command: () => {
-                //         navigate(rootPath + "/scoreboard");
-                //     }
-                // },
-            ]
-        },
-        {
             label: 'Sobre',
             icon: 'pi pi-fw pi-info-circle',
             command: () => {
@@ -292,7 +183,7 @@ const Navbar = () => {
                     </>
             }
             <div className="logo m-0 p-0 flex-1" onClick={() => navigate(rootPath + '/')}>
-                <Image src={logo} width="48vh" alt="Zenith Informatica"/>
+                <Image src="https://zenithinformatica.com.br/assets/images/logozenithfullico-transp-122x122.png" width="36vh" alt="Zenith Informatica"/>
             </div>
         </div>
     )

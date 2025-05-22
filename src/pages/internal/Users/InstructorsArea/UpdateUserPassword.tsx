@@ -4,7 +4,7 @@ import { InputText } from 'primereact/inputtext';
 import ReactDOM from 'react-dom/client';
 
 import Toast from '../../../../components/Toast';
-import apiGrb from '../../../../services/apiGrb';
+import apiZen from '../../../../services/apiZen';
 
 const UpdateUserPassword = (props:any) => {
     const [getId, setId] = useState<any>();
@@ -21,7 +21,7 @@ const UpdateUserPassword = (props:any) => {
     async function handleSubmit(event:any){
         event?.preventDefault();
         setLoading(true);
-        await apiGrb.put("/user/password", {id: getId, OldPassword: getOldPassword, Password: getPassword, ConfirmPassword: getConfirmPassword}).then((response:any) => {
+        await apiZen.put("/user/password", {id: getId, OldPassword: getOldPassword, Password: getPassword, ConfirmPassword: getConfirmPassword}).then((response:any) => {
             setLoading(false);
             //@ts-ignore
             ReactDOM.hydrateRoot(document.getElementById("root") as HTMLElement, <Toast type={"success"} title={"Atualizado!"} message={response?.data?.data || "Atualizado com sucesso!"}/>);
